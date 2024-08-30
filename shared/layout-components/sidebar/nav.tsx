@@ -172,11 +172,26 @@ export const MenuItems: any = [
     menutitle: "PAGES",
   },
   {
-    path: "/dashboard/product",
     icon: ProductIcon,
     title: "Products",
-    type: "link",
+    type: "sub",
     active: false,
+    children: [
+      {
+        path: "/dashboard/product",
+        type: "link",
+        active: false,
+        selected: false,
+        title: "Products",
+      },
+      {
+        path: "/dashboard/category",
+        type: "link",
+        active: false,
+        selected: false,
+        title: "Category",
+      },
+    ],
   },
   {
     icon: OrderIcon,
