@@ -6,7 +6,7 @@ const ReactApexChart = dynamic(() => import("react-apexcharts"), {ssr : false});
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from 'react-simple-maps';
 
 interface spark3 {
-  options?: ApexOptions,
+  options?: any,
   width?: number;
   height?: string | number,
   series?: ApexOptions['series'],
@@ -112,7 +112,7 @@ export class Ethereum extends Component<{}, spark3> {
         options: {
           chart: {
             events: {
-              mounted: (chart) => {
+              mounted: (chart:any) => {
                 chart.windowResizeHandler();
               }
             },
@@ -191,7 +191,7 @@ export class Ethereum extends Component<{}, spark3> {
         options: {
           chart: {
             events: {
-              mounted: (chart) => {
+              mounted: (chart:any) => {
                 chart.windowResizeHandler();
               }
             },
@@ -274,7 +274,7 @@ export class Ethereum extends Component<{}, spark3> {
         options: {
           chart: {
             events: {
-              mounted: (chart) => {
+              mounted: (chart:any) => {
                 chart.windowResizeHandler();
               }
             },
@@ -353,7 +353,7 @@ export class TotalRevenue extends Component<{}, spark3> {
         options: {
           chart: {
             events: {
-              mounted: (chart) => {
+              mounted: (chart:any) => {
                 chart.windowResizeHandler();
               }
             },
@@ -426,7 +426,7 @@ export class Applicants extends Component<{}, spark3> {
           colors: ["#845adf", "rgba(132, 90, 223, 0.1)"],
           chart: {
             events: {
-              mounted: (chart) => {
+              mounted: (chart:any) => {
                 chart.windowResizeHandler();
               }
             },
@@ -516,7 +516,7 @@ export class Applicants extends Component<{}, spark3> {
               },
             },
             labels: {
-              formatter: function (y) {
+              formatter: function (y:any) {
                 return y.toFixed(0) + "";
               }
             }
@@ -525,7 +525,7 @@ export class Applicants extends Component<{}, spark3> {
             shared: true,
             intersect: false,
             y: {
-              formatter: function (y) {
+              formatter: function (y:any) {
                 if (typeof y !== "undefined") {
                   return y.toFixed(0) + " points";
                 }
@@ -571,7 +571,7 @@ export class Applicants extends Component<{}, spark3> {
         options: {
           chart: {
             events: {
-              mounted: (chart) => {
+              mounted: (chart:any) => {
                 chart.windowResizeHandler();
               }
             },
@@ -643,7 +643,7 @@ export class Applicants extends Component<{}, spark3> {
         options: {
           chart: {
             events: {
-              mounted: (chart) => {
+              mounted: (chart:any) => {
                 chart.windowResizeHandler();
               }
             },

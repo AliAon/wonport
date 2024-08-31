@@ -5,8 +5,8 @@ const ReactApexChart = dynamic(() => import("react-apexcharts"), { ssr: false })
 
 
 interface spark3 {
-    options?: ApexOptions,
-    width?: number;
+    options?: any,
+    width?: any;
     height?: string | number,
     series?: ApexOptions['series'],
     label?: XAxisAnnotations
@@ -28,7 +28,7 @@ export class Candidatesdata extends Component<{}, spark3> {
                 labels: ["Female", "Male"],
                 chart: {
                     events: {
-                        mounted: (chart) => {
+                        mounted: (chart:any) => {
                           chart.windowResizeHandler();
                         }
                       },
@@ -70,7 +70,7 @@ export class Candidatesdata extends Component<{}, spark3> {
                                     fontSize: '18px',
                                     color: undefined,
                                     offsetY: 8,
-                                    formatter: function (val) {
+                                    formatter: function (val:any) {
                                         return val + "%";
                                     }
                                 },
@@ -123,7 +123,7 @@ export class Subscriptions extends Component<{}, spark3> {
 
                 chart: {
                     events: {
-                        mounted: (chart) => {
+                        mounted: (chart:any) => {
                           chart.windowResizeHandler();
                         }
                       },
@@ -166,7 +166,7 @@ export class Subscriptions extends Component<{}, spark3> {
                     horizontalAlign: 'center',
                     fontWeight: 600,
                     fontSize: '11px',
-                    tooltipHoverFormatter: function (val, opts) {
+                    tooltipHoverFormatter: function (val:any, opts:any) {
                         return val + ' - ' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex] + '';
                     },
                     labels: {
@@ -228,7 +228,7 @@ export class Subscriptions extends Component<{}, spark3> {
                         },
                     },
                     labels: {
-                        formatter: function (y) {
+                        formatter: function (y:any) {
                             return y.toFixed(0) + "";
                         },
                         show: true,
@@ -271,21 +271,21 @@ export class Subscriptions extends Component<{}, spark3> {
                     y: [
                         {
                             title: {
-                                formatter: function (val) {
+                                formatter: function (val:any) {
                                     return val;
                                 }
                             }
                         },
                         {
                             title: {
-                                formatter: function (val) {
+                                formatter: function (val:any) {
                                     return val;
                                 }
                             }
                         },
                         {
                             title: {
-                                formatter: function (val) {
+                                formatter: function (val:any) {
                                     return val;
                                 }
                             }

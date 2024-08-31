@@ -4,7 +4,7 @@ import { Component } from "react";
 const ReactApexChart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 interface spark3 {
-    options?: ApexOptions,
+    options?: any,
     width?: number;
     height?: string | number,
     series?: ApexOptions['series'],
@@ -29,7 +29,7 @@ export class Team1 extends Component<{}, spark3> {
 
                 chart: {
                     events: {
-                        mounted: (chart) => {
+                        mounted: (chart:any) => {
                           chart.windowResizeHandler();
                         }
                       },
@@ -120,7 +120,7 @@ export class Team2 extends Component<{}, spark3> {
 
                 chart: {
                     events: {
-                        mounted: (chart) => {
+                        mounted: (chart:any) => {
                           chart.windowResizeHandler();
                         }
                       },
@@ -209,7 +209,7 @@ export class Team3 extends Component<{}, spark3> {
 
                 chart: {
                     events: {
-                        mounted: (chart) => {
+                        mounted: (chart:any) => {
                           chart.windowResizeHandler();
                         }
                       },
@@ -293,7 +293,7 @@ export class Team4 extends Component<{}, spark3> {
 
                 chart: {
                     events: {
-                        mounted: (chart) => {
+                        mounted: (chart:any) => {
                           chart.windowResizeHandler();
                         }
                       },
@@ -379,7 +379,7 @@ export class Team5 extends Component<{}, spark3> {
             options: {
                 chart: {
                     events: {
-                        mounted: (chart) => {
+                        mounted: (chart:any) => {
                           chart.windowResizeHandler();
                         }
                       },
@@ -478,7 +478,7 @@ export class ProjectAnalysis extends Component<{}, spark3> {
             options: {
                 chart: {
                     events: {
-                        mounted: (chart) => {
+                        mounted: (chart:any) => {
                           chart.windowResizeHandler();
                         }
                       },
