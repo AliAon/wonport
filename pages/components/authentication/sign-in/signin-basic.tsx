@@ -9,7 +9,7 @@ const Signinbasic = () => {
   return (
    <Fragment>
     <Seo title={"Signin-basic"}/>
-    <div className="container">
+    {/* <div className="container">
         <div className="flex justify-center authentication authentication-basic items-center h-full text-defaultsize text-defaulttextcolor">
           <div className="grid grid-cols-12">
             <div className="xxl:col-span-4 xl:col-span-4 lg:col-span-4 md:col-span-3 sm:col-span-2"></div>
@@ -45,7 +45,7 @@ const Signinbasic = () => {
                                 </div>
                             </div>
                             <div className="xl:col-span-12 col-span-12 grid mt-2">
-                                <Link href="/components/dashboards/crm/" className="ti-btn ti-btn-primary !bg-primary !text-white !font-medium">Sign In</Link>
+                                <Link href="/dashboards" className="ti-btn ti-btn-primary !bg-primary !text-white !font-medium">Sign In</Link>
                             </div>
                         </div>
                         <div className="text-center">
@@ -71,7 +71,7 @@ const Signinbasic = () => {
             <div className="xxl:col-span-4 xl:col-span-4 lg:col-span-4 md:col-span-3 sm:col-span-2"></div>
           </div>
         </div>
-    </div>
+    </div> */}
    </Fragment>
   )
 }

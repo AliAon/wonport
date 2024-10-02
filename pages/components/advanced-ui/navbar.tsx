@@ -18,10 +18,10 @@ const Navbar = () => {
               <header
                 className="flex flex-wrap sm:justify-start sm:flex-nowrap z-40 w-full bg-white text-sm dark:bg-bodybg">
                 <nav className=" w-full mx-auto sm: sm:flex sm:items-center sm:justify-between" aria-label="Global">
-                  <Link href="#!" className="header-logo">
+                  {/* <Link href="#!" className="header-logo">
                     <img src="../../../assets/images/brand-logos/toggle-dark.png" alt="logo" className="dark:hidden block" />
                     <img src="../../../assets/images/brand-logos/toggle-dark.png" alt="logo" className="hidden dark:block" />
-                  </Link>
+                  </Link> */}
                   <div className="flex flex-row items-center gap-5 mt-5 sm:justify-end sm:mt-0 sm:ps-5">
                     <Link className="font-medium text-primary" href="#!" aria-current="page">Landing</Link>
                     <Link className="font-medium text-gray-600 hover:text-gray-400 dark:text-[#8c9097] dark:text-white/50 dark:hover:text-gray-500 whitespace-nowrap"

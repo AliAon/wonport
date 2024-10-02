@@ -5,10 +5,10 @@ import MenuItems from "./nav";
 import { ThemeChanger } from "../../redux/action";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { basePath } from "@/next.config";
 import store from "@/shared/redux/store";
 import SimpleBar from 'simplebar-react';
 import Menuloop from "./menuloop";
+import Logo from "@/pages/components/logo";
 
 const Sidebar = ({ local_varaiable, ThemeChanger }: any) => {
 
@@ -562,7 +562,8 @@ const Sidebar = ({ local_varaiable, ThemeChanger }: any) => {
 			<aside className="app-sidebar sticky" id="sidebar" onMouseOver={() => Onhover()}
 				onMouseLeave={() => Outhover()}>
 				<div className="main-sidebar-header">
-					<Link href="/components/dashboards/crm/" className="header-logo">
+					<Logo/>
+					{/* <Link href="/components/dashboards/crm/" className="header-logo">
 						<img src={`${process.env.NODE_ENV === "production" ? basePath : ""}/assets/images/brand-logos/desktop-logo.png`} alt="logo" className="main-logo desktop-logo"/>
 						<img src={`${process.env.NODE_ENV === "production" ? basePath : ""}/assets/images/brand-logos/toggle-logo.png`} alt="logo" className="main-logo toggle-logo"/>
 						<img src={`${process.env.NODE_ENV === "production" ? basePath : ""}/assets/images/brand-logos/desktop-dark.png`} alt="logo" className="main-logo desktop-dark"/>
@@ -570,7 +571,7 @@ const Sidebar = ({ local_varaiable, ThemeChanger }: any) => {
 						<img src={`${process.env.NODE_ENV === "production" ? basePath : ""}/assets/images/brand-logos/desktop-white.png`} alt="logo" className="main-logo desktop-white"/>
 						<img src={`${process.env.NODE_ENV === "production" ? basePath : ""}/assets/images/brand-logos/toggle-white.png`} alt="logo" className="main-logo toggle-white"/>
 
-					</Link>
+					</Link> */}
 				</div>
 
 				<div className="main-sidebar " id="sidebar-scroll">

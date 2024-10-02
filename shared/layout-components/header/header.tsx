@@ -527,7 +527,7 @@ const Header = ({ local_varaiable, ThemeChanger }:any) => {
                   <i className="bx bx-sun header-link-icon"></i>
                 </Link>
               </div>
-              <div className="header-element cart-dropdown hs-dropdown ti-dropdown md:!block !hidden py-[1rem] md:px-[0.65rem] px-2 [--placement:bottom-right] rtl:[--placement:bottom-left]">
+              {/* <div className="header-element cart-dropdown hs-dropdown ti-dropdown md:!block !hidden py-[1rem] md:px-[0.65rem] px-2 [--placement:bottom-right] rtl:[--placement:bottom-left]">
                 <button id="dropdown-cart" type="button"
                   className="hs-dropdown-toggle relative ti-dropdown-toggle !p-0 !border-0 flex-shrink-0  !rounded-full !shadow-none align-middle text-xs">
                   <i className="bx bx-cart header-link-icon"></i>
@@ -599,7 +599,7 @@ const Header = ({ local_varaiable, ThemeChanger }:any) => {
                   </div>
 
                 </div>
-              </div>
+              </div> */}
               <div className="header-element py-[1rem] md:px-[0.65rem] px-2 notifications-dropdown header-notification hs-dropdown ti-dropdown !hidden md:!block [--placement:bottom-right]">
                 <button id="dropdown-notification" type="button"
                   className="hs-dropdown-toggle relative ti-dropdown-toggle !p-0 !border-0 flex-shrink-0  !rounded-full !shadow-none align-middle text-xs">
@@ -661,7 +661,7 @@ const Header = ({ local_varaiable, ThemeChanger }:any) => {
                   </div>
                 </div>
               </div>
-              <div className="header-element header-apps dark:text-[#8c9097] dark:text-white/50 py-[1rem] md:px-[0.65rem] px-2 hs-dropdown ti-dropdown md:!block !hidden [--placement:bottom-left]">
+              {/* <div className="header-element header-apps dark:text-[#8c9097] dark:text-white/50 py-[1rem] md:px-[0.65rem] px-2 hs-dropdown ti-dropdown md:!block !hidden [--placement:bottom-left]">
 
                 <button aria-label="button" id="dropdown-apps" type="button"
                   className="hs-dropdown-toggle ti-dropdown-toggle !p-0 !border-0 flex-shrink-0  !rounded-full !shadow-none text-xs">
@@ -755,7 +755,7 @@ const Header = ({ local_varaiable, ThemeChanger }:any) => {
                   </div>
 
                 </div>
-              </div>
+              </div> */}
               <div className="header-element header-fullscreen py-[1rem] md:px-[0.65rem] px-2">
                 <Link aria-label="anchor"
                   onClick={() => toggleFullscreen()}

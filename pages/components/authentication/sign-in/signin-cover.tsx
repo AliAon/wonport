@@ -25,7 +25,9 @@ const Signincover = () => {
         <Seo title={"Signin-cover"}/>
     <div className="grid grid-cols-12 authentication mx-0 text-defaulttextcolor text-defaultsize">
 
-    <div className="xxl:col-span-7 xl:col-span-7 lg:col-span-12 col-span-12">
+   */}
+
+</div>  {/* <div className="xxl:col-span-7 xl:col-span-7 lg:col-span-12 col-span-12">
         <div className="flex justify-center items-center h-full">
           <div className="xxl:col-span-3 xl:col-span-3 lg:col-span-3 md:col-span-3 sm:col-span-2"></div>
           <div className="xxl:col-span-6 xl:col-span-6 lg:col-span-6 md:col-span-6 sm:col-span-8 col-span-12">
@@ -121,8 +123,6 @@ const Signincover = () => {
             </div>
         </div>
     </div>
-
-</div>
 </HelmetProvider>
 </Fragment>
   )
